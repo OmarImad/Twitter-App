@@ -1,0 +1,95 @@
+@import "bootstrap.min.css";
+
+* {
+    border-radius: 0 !important;
+    font-family: ms, sans-serif !important;;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+
+}
+
+.w-5 {
+    width: 5% !important;
+    min-width: 3.5rem !important;
+}
+
+.w-10 {
+    width: 10% !important;
+}
+
+.w-15 {
+    width: 15% !important;
+}
+
+.w-20 {
+    width: 15% !important;
+}
+
+.w-30 {
+    width: 30% !important
+}
+
+.w-35 {
+    width: 35% !important
+}
+
+.w-40 {
+    width: 40% !important;
+}
+
+.w-95 {
+    width: 95% !important;
+}
+
+input[type=radio] {
+    display: block;
+    margin: 0 auto;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+@font-face {
+    font-family: 'ms' ;
+}
+
+#wb p {
+    color: #ff0000;
+    width: 100%;
+}
+
+/*********************/
+#loading_bar {
+    height: .25rem;
+    width: 10%;
+    z-index: 100;
+    background-color: red;
+    position: fixed;
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    display: none;
+}
+
+@keyframes loading {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 90%;
+    }
+    100% {
+        left: 0;
+    }
+
+
+}

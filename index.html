@@ -1,0 +1,51 @@
+<html lang="">
+
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1"
+          charset="UTF-8">
+    <link href="format.css" rel="stylesheet">
+
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+
+<div id="login_form" style="z-index: 100" class="bg-light d-flex justify-content-center align-items-center w-100 h-100">
+    <div class="minw500 form-group p-2 shadow">
+        <input id="username" type="text" class="form-control my-2 border" placeholder="Username . . .">
+        <button onclick="set_username()" class="form-control btn btn-primary my-2">Save</button>
+
+    </div>
+</div>
+<div class="header bg-success">
+</div>
+<div class="spacer">
+
+</div>
+
+<div class="w-100 p-1 d-flex justify-content-center">
+
+    <!----- col -->
+    <div class="d-flex flex-column minw500">
+        <!--- tweet box --->
+        <div class="w-100 bg-white p-3 shadow">
+            <textarea onchange="letters_count(this,'count')" oninput="letters_count(this,'count')" id="tweet" placeholder="write something"
+                      class="form-control p-2 mb-2 border"></textarea>
+            <button id="count" class="btn btn-success" onclick="post_tweet()">Tweet (150)</button>
+        </div>
+        <hr class="w-100 border">
+        <!--- tweets list --->
+        <div class="w-100" id="news_feed">
+
+        </div>
+    </div>
+
+</div>
+</body>
+
+<script src="main.js">
+</script>
+
+</html>
